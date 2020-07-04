@@ -1,0 +1,6 @@
+# robots.txt for Femboy Hooters
+
+User-agent: *
+Disallow: /assets/
+Disallow: /components/
+Disallow: /views/

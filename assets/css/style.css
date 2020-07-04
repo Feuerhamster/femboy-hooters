@@ -1,0 +1,290 @@
+/*
+* Color and variable definition
+*/
+:root {
+    --orange: #f47a39;
+    --orange-light: #ff9258;
+    --brown: #391b0c;
+    --blue: #2354b1;
+    --blue-light: #3e70d0;
+    --shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*
+* Basic layout and styling of default objects
+*/
+html {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    color: var(--brown);
+    background-color: rgb(245, 245, 245);
+    margin: 60px 0 0;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+/*
+* Segments
+*/
+.segment {
+    display: flex;
+    padding: 50px 30px 50px 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.segment-column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.segment-accent {
+    background-color: rgb(235, 235, 235);
+}
+
+.segment p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.segment img {
+    max-width: 100%;
+}
+
+.segment h1 {
+    text-align: center;
+}
+
+.segment a {
+    text-align: center;
+    color: var(--blue-light);
+}
+
+.segment a:hover {
+    color: var(--blue);
+}
+
+.segment a.large-links {
+    font-size: 28px;
+}
+
+/*
+* Navigation bar
+*/
+.navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: var(--shadow);
+    padding: 4px 10px 0 10px;
+    align-items: stretch;
+    height: 60px;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 4px solid var(--orange);
+}
+
+.navbar > h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: var(--orange);
+    font-size: 38px;
+    cursor: pointer;
+}
+
+.navbar > nav,
+.navbar > div {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > nav.active {
+    display: flex;
+}
+
+.navbar a {
+    margin: 0 10px 0 5px;
+    color: var(--brown);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#toggle-nav {
+    display: none;
+}
+
+/*
+* Flexbox Spacer
+*/
+.spacer {
+    flex-grow: 1;
+}
+
+/*
+* Quote (Big orange header)
+*/
+.quote-header {
+    color: var(--orange);
+    font-size: 69px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.small-quote {
+    width: 60%;
+    font-size: 52px;
+}
+
+/*
+* Buttons
+*/
+button,
+.button {
+    padding: 8px 40px 5px 40px;
+    background-color: var(--orange);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.button {
+    color: white;
+}
+
+button:hover,
+.button:hover {
+    background-color: var(--orange-light);
+    color: white;
+}
+
+/*
+* Footer
+*/
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(36, 32, 31);
+    color: white;
+}
+
+footer > p {
+    font-size: 16px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*
+* Fontawesome Icon styling
+*/
+i.fab,
+i.fas,
+i.far {
+    margin-right: 5px;
+}
+
+/*
+* Google embeds
+*/
+.google-trends-embed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.google-trends-embed > iframe {
+    margin: 0 20px;
+    width: 40%;
+}
+
+/*
+Mobile optimization
+*/
+@media only screen and (max-width: 920px) {
+    .navbar > nav {
+        position: absolute;
+        display: none;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        box-shadow: var(--shadow);
+    }
+
+    .quote-header,
+    .small-quote {
+        font-size: 42px;
+        width: 100%;
+    }
+
+    .segment a {
+        font-size: 24px;
+    }
+
+    #toggle-nav {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .youtube-embeds iframe {
+        width: 340px;
+        height: 192px;
+    }
+
+    .google-trends-embed > iframe {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .mobile-button-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-button-box > a:nth-child(1) {
+        margin-bottom: 10px;
+    }
+}
