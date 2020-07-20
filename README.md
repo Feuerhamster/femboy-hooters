@@ -2,14 +2,24 @@
 This project and website is NOT a part of Hooters of America, LLC.
 
 ## Contribute
-This website is not really finished yet. 
-It is to be constantly expanded with content. 
-If you have suggestions for content or improvements, please create an issue with the appropriate label or make changes yourself and create a pull request. 
-To contribute to the code you need basic knowledge of HTML and maybe PHP.
+**The Femboy hooters website is an ongoing project which should be extended with content by the community over time.**
+
+#### Three ways to contribute:
+- Share this project! Any person can help by sharing and promoting the site.
+- Suggest content and changes or report bugs by [creating an issue](https://github.com/Feuerhamster/femboy-hooters/issues)
+- Fork the project, do your stuff and make a pull request. But please have a look at the contribution guidelines. For this, you should have a basic knowledge about HTML, CSS and maybe a bit PHP. 
+
+#### Contribution guidelines:
+- Make sure that the added content is presented in a professional manner.
+- Watch out for spelling
+- Paying attention to code quality and best practices
+- Keep to the structure of the project
 
 ## Hosting
-The website is currently only available under a preview domain which is not for public usage.
-We plan to go live soon.
+Current official address: https://femboy-hooters.sytes.net
+It is a free subdomain because I don't spend money to buy a real top-level domain. But if you have a better domain, you can send me a message :)
+
+Server: Linux Debian with NGINX webserver.
 
 ## Installation
 If you want to run this website locally, follow these steps:
@@ -58,3 +68,8 @@ But this is wrong. We have to get:
 `http://localhost/femboy-hooters/assets/img/test.png`.
 So the `getFullBasePath()` method returns you:
 `http://localhost/femboy-hooters/` (depends on your host and configuration)
+
+## Maintainer & Contact
+**This project is developed and mainained by Feuerhamser**
+- **Discord:** Feuerhamster#8828
+- **Email:** feuerhamster02@gmail.com

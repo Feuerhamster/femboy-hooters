@@ -4,3 +4,5 @@ User-agent: *
 Disallow: /assets/
 Disallow: /components/
 Disallow: /views/
+
+Sitemap: https://femboy-hooters.sytes.net/sitemap.xml

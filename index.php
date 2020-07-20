@@ -32,7 +32,7 @@ ViewRouter::config("base_path", "/femboy-hooters/");
         <meta property="og:url" content="https://femboy-hooters-preview.hamsterlabs.de/">
         <meta property="og:site_name" content="Femboy Hooters">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="<?= ViewRouter::getFullBasePath() ?>assets/img/shop.jpg">
+        <meta property="og:image" content="<?= ViewRouter::getFullBasePath() ?>assets/img/restaurant.jpg">
 
         <meta property="og:description" content="A Hooters restaurant entirely staffed by femboys. It originally refers to a series of memes exploring the concept of establishing a Hooters restaurant staffed by feminine crossdressing males. But now it has become very popular on the internet.">
 
