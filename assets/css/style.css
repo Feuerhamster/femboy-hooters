@@ -185,7 +185,7 @@ a.button {
 button:hover,
 .button:hover {
     background-color: var(--orange-light);
-    color: white;
+    color: white!important;
 }
 
 /*

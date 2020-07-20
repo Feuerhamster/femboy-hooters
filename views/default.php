@@ -74,8 +74,8 @@
     </p>
 
     <div class="mobile-button-box" data-aos="zoom-in-up" data-aos-delay="200">
-        <a class="button" role="button" href="about" href="https://www.reddit.com/r/femboyhooters/"><i class="fab fa-reddit"></i> Reddit</a>
-        <a class="button" role="button" href="about" href="https://discord.gg/3DGERAH"><i class="fab fa-discord"></i> Discord</a>
+        <a class="button" role="button" href="https://www.reddit.com/r/femboyhooters/"><i class="fab fa-reddit"></i> Reddit</a>
+        <a class="button" role="button" href="https://discord.gg/3DGERAH"><i class="fab fa-discord"></i> Discord</a>
     </div>
 
 </div>
